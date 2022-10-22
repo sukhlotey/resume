@@ -1,0 +1,189 @@
+% Based (but completely redesigned) on Resume in Latex Template by Sourabh Bajaj
+\documentclass[letterpaper, 11pt]{article}
+
+\pdfgentounicode=1
+
+% font
+\usepackage[T1]{fontenc}
+\usepackage[sfdefault]{noto}
+
+% packages
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{scrextend}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{fontawesome}
+\usepackage{setspace}
+\usepackage{enumitem}
+
+\usepackage[left=1.25cm,right=1.25cm,top=2cm,bottom=2cm]{geometry}
+
+% custom
+
+% command macros
+\newcommand{\iconSpace}{\hspace{1px}}
+\newcommand{\bulletSpace}{\vspace{-8pt}}
+\newcommand{\hSpace}{\hspace{8px}}
+\newcommand{\secStartSpace}{\vspace{3pt}}
+\newcommand{\secEndSpace}{\vspace{5pt}}
+\newcommand{\spaceCollapse}{\vspace{-5pt}}
+% use the macro for work experience header
+% arg 1 = header title
+% arg 2 = position title (subtitle (in italics)
+% arg 3 = date
+\newcommand{\workHeader}[3]{
+\noindent \textbf{#1} \hfill \textbf{#3}\\
+	\textit{#2}
+}
+
+% line spacing
+% \linespread{1.15}
+
+% colors
+\definecolor{blue}{RGB}{14, 100, 237} % change the blue color if this one is not to your liking
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=blue,
+    urlcolor=blue,
+}
+
+% indent space
+\titlespacing{\section}{0pt}{1px}{2ex}
+
+% Sections formatting
+\titleformat{\section}{
+\vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\begin{document}
+
+% ------------- header ------------- %
+\begin{center} 
+	{\Large \textbf{Sukhpreet Singh}}\\
+	\vspace{1px}
+	% "footnotes" (icon + link)
+	{\footnotesize
+		\faicon{envelope} \href{mailto:joesmith@gmail.com}{sukh.singhlotey@gmail.com} 
+		\hSpace
+		\faicon{globe} \iconSpace \href{https://sukhlotey.github.io/website}{Sukhpreet Singh} 
+		\hSpace 
+		\faicon{linkedin} \hspace{.1px} \href{https://www.linkedin.com/in/sukhpreetlotey/}{Sukhpreet Singh} 
+		\hSpace
+		}\\
+	{\footnotesize
+		\faicon{github} \iconSpace \href{https://github.com/sukhlotey}{Sukhpreet Singh}
+		\hSpace 
+		\faicon{phone} \iconSpace
+		+91 7696138519
+		% \hSpace 
+		% \faicon{map-marker} \iconSpace
+		% Regina, SK
+	}
+\end{center}
+\spaceCollapse
+% ------------- end header ------------- %
+
+
+% ------------- education ------------- %
+\section{\color{blue} \textbf{Education}}
+\secStartSpace
+
+\begin{addmargin}[1em]{1em}
+	\textbf{Ludhiana College of Engineering & Technology}\hfill \textbf{2020 - 2023}\\
+	\setlength\parindent{1cm} B.Sc. Information Technology (IT)\\
+        \textbf{Senior Secondary Education (Non-Medical(Science))}\hfill \textbf{2018 - 2020}\\
+        \setlength\parindent{1cm} Dasmesh Senior Secondary School\\
+        \textbf{  Matriculation }\hfill \textbf{2017 - 2018}\\
+        \setlength\parindent{1cm} Dasmesh Senior Secondary School\\
+\end{addmargin}
+\secEndSpace
+% ------------- end education ------------- %
+
+
+% ------------- work experience ------------- %
+\section{\color{blue} \textbf{Executive Summary}}
+\secStartSpace
+I love software.Coding is my first priority.I'm doing both \textbf{design} and \textbf{development}.I've build many basic and major projects in different kind of languages.But mostly built in react.I'm happy to doing react.
+I mentioned two react projects in Projects section below.
+\secEndSpace
+% ------------- end experience ------------- %
+
+
+% ------------- projects ------------- %
+\section{\color{blue} \textbf{Projects}}
+\secStartSpace
+
+\begin{addmargin}[1em]{1em}
+		
+	% ------------- project 1 ------------- %
+	\noindent\href{https://github.com/sukhlotey/newsdaily}{\textbf{News Man}}  \hfill \textbf{January 2022} 
+		
+	\noindent A React application that shows world's live news.
+	\spaceCollapse
+	\begin{itemize}
+		\item \textbf{Technology/Tools:} React,News api, JavaScript,Bootstrap, CSS, HTML
+		      \bulletSpace
+		\item Source: \faicon{github} \href{https://github.com/sukhlotey/newsdaily}{\underline{News Man}}
+	\end{itemize}
+	% ------------- end project 1 ------------- %
+	
+	% ------------- project 2 ------------- %
+	\noindent\href{https://github.com/sukhlotey/think-pedia}{\textbf{Think Pedia}}  \hfill \textbf{March 2022} 
+		
+	\noindent A React application that shows you wikipedia results with better way through Think Pedia
+	\spaceCollapse
+	\begin{itemize}
+		\item \textbf{Technology/Tools:} React,Wikipedia api, JavaScript, CSS, HTML
+		      \bulletSpace
+		\item working demo: \faicon{github} \href{https://thinkpedia.netlify.app/}{\underline{Think Pedia}}
+           \item Source: \faicon{github} \href{https://github.com/sukhlotey/think-pedia}{\underline{Think Pedia}}
+	\end{itemize}
+	% ------------- end project 2 ------------- %
+		% ------------- project 3 ------------- %
+	\noindent\href{https://github.com/sukhlotey/website}{\textbf{Portfolio}}  \hfill \textbf{December 2021} 
+		
+	\noindent My Personal Website with contacts and social media handles.
+	\spaceCollapse
+	\begin{itemize}
+		\item \textbf{Technology/Tools:} JavaScript, CSS, HTML
+		      \bulletSpace
+		\item working demo: \faicon{github} \href{https://sukhlotey.github.io/website/}{\underline{Portfolio}}
+           \item Source: \faicon{github} \href{https://github.com/sukhlotey/website}{\underline{Portfolio}}
+	\end{itemize}
+	% ------------- end project 2 ------------- %
+		
+\end{addmargin}
+\secEndSpace
+% ------------- end projects ------------- %
+
+
+% ------------- skills ------------- %
+\section{\color{blue} \textbf{Skills}}
+\secStartSpace
+
+\begin{addmargin}[1em]{1em}
+	\setstretch{1.125}
+	\noindent \textbf{Technologies i work in:} Html5, CSS, SASS, JavaScript, Bootstrap, Tailwind CSS, Material UI, ReactJS, Redux, npm, yarn \\
+	\noindent \textbf{OS:} Linux, MS Windows\\
+	\noindent \textbf{Tools:} Visual Studio Code, Sublime,Git
+\end{addmargin}
+\secEndSpace
+% ------------- end skills ------------- %
+
+
+% ------------- achievements ------------- %
+\section{\color{blue} \textbf{Achievements}}
+\secStartSpace
+
+\begin{addmargin}[1em]{1em}
+	\begin{itemize}[itemsep=-2.25pt]
+		\item Hacktoberfest 2022 \hfill  \textbf{2022}
+		\item Sololearn\hfill \textbf{2021}
+	\end{itemize}
+\end{addmargin}
+% ------------- end achievements ------------- %
+
+\end{document}
