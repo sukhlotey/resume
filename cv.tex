@@ -1,5 +1,5 @@
 % Based (but completely redesigned) on Resume in Latex Template by Sourabh Bajaj
-\documentclass[letterpaper, 11pt]{article}
+\documentclass[letterpaper, 8pt]{article}
 
 \pdfgentounicode=1
 
@@ -24,9 +24,9 @@
 % command macros
 \newcommand{\iconSpace}{\hspace{1px}}
 \newcommand{\bulletSpace}{\vspace{-8pt}}
-\newcommand{\hSpace}{\hspace{8px}}
+\newcommand{\hSpace}{\hspace{7px}}
 \newcommand{\secStartSpace}{\vspace{3pt}}
-\newcommand{\secEndSpace}{\vspace{5pt}}
+\newcommand{\secEndSpace}{\vspace{4pt}}
 \newcommand{\spaceCollapse}{\vspace{-5pt}}
 % use the macro for work experience header
 % arg 1 = header title
@@ -41,7 +41,7 @@
 % \linespread{1.15}
 
 % colors
-\definecolor{blue}{RGB}{14, 100, 237} % change the blue color if this one is not to your liking
+\definecolor{blue}{RGB}{0, 0, 0} % change the blue color if this one is not to your liking
 
 \hypersetup{
     colorlinks=true,
@@ -66,20 +66,19 @@
 	\vspace{1px}
 	% "footnotes" (icon + link)
 	{\footnotesize
-		\faicon{envelope} \href{mailto:joesmith@gmail.com}{sukh.singhlotey@gmail.com} 
-		\hSpace
-		\faicon{globe} \iconSpace \href{https://sukhlotey.github.io/imSukhpreet/}{Sukhpreet Singh} 
-		\hSpace 
-		\faicon{linkedin} \hspace{.1px} \href{https://www.linkedin.com/in/sukhpreetlotey/}{Linkedin} 
-		\hSpace
+		\faicon{envelope} \iconSpace \href{mailto:sukh.singhlotey@gmail.com}{Email} 
+        |
+		\faicon{globe}\iconSpace \href{https://sukhlotey.github.io/imSukhpreet/}{Portfolio}
+        |
+		\faicon{linkedin}\iconSpace \href{https://www.linkedin.com/in/sukhpreetlotey/}{Linkedin} 
+        |
 		}\\
 	{\footnotesize
-		\faicon{github} \iconSpace \href{https://github.com/sukhlotey}{Github}
-		\hSpace 
+		\faicon{github}\iconSpace \href{https://github.com/sukhlotey}{Github}
+        |
 		\faicon{phone} \iconSpace
 		+91 7696138519
-		% \hSpace 
-		% \faicon{map-marker} \iconSpace
+        |		% \faicon{map-marker} \iconSpace
 		% Regina, SK
 	}
 \end{center}
@@ -92,14 +91,10 @@
 \secStartSpace
 
 \begin{addmargin}[1em]{1em}
-\textbf{Guru Nanak Dev Engineering College} \hfill \textbf{2023 - 2025}\\
+\textbf{Guru Nanak Dev Engineering College} - GPA 7.94 \hfill \textbf{2023 - 2025}\\
         \setlength\parindent{1cm} Master of Computer Application (MCA)\\
-	\textbf{Ludhiana College of Engineering and Technology} \hfill \textbf{2020 - 2023}\\
+	\textbf{Ludhiana College of Engineering and Technology} - GPA 7.97 \hfill \textbf{2020 - 2023}\\
 	\setlength\parindent{1cm} B.Sc. Information Technology (IT)\\
-        \textbf{Senior Secondary Education (Non-Medical(Science))}\hfill \textbf{2018 - 2020}\\
-        \setlength\parindent{1cm} Dasmesh Senior Secondary School\\
-        \textbf{  Matriculation }\hfill \textbf{2017 - 2018}\\
-        \setlength\parindent{1cm} Dasmesh Senior Secondary School\\
 \end{addmargin}
 \secEndSpace
 % ------------- end education ------------- %
@@ -122,6 +117,18 @@ As a MERN stack developer, I specialize in building web applications using Mongo
 
 \begin{addmargin}[1em]{1em}
 % ------------- project 1 ------------- %
+\noindent\href{https://github.com/sukhlotey/Chat-Hub}{\textbf{Chat Hub}}  \hfill \textbf{October 2024} 
+		
+	\noindent The MERN Stack real-time chat application
+	\spaceCollapse
+	\begin{itemize}
+		\item \textbf{Technology/Tools:} MERN(MongoDb, ExpressJS, ReactJS, NodeJS), Socketio, JWT,yarn
+		      \bulletSpace
+            	\item Live:  \href{https://freechathub.netlify.app/}
+  {\underline{Chat hub}}
+		\item Source: \href{https://github.com/sukhlotey/Finance-Flow}
+  {\underline{Chat hub}}
+	\end{itemize}
 \noindent\href{https://github.com/sukhlotey/Finance-Flow}{\textbf{Finance Flow}}  \hfill \textbf{August 2024} 
 		
 	\noindent The MERN Stack Application for expenses
@@ -129,23 +136,23 @@ As a MERN stack developer, I specialize in building web applications using Mongo
 	\begin{itemize}
 		\item \textbf{Technology/Tools:} MERN(MongoDb, ExpressJS, ReactJS, NodeJS), Typescript(TSX), Clerk auth
 		      \bulletSpace
-            	\item Live: \faicon{globe} \href{https://personal-financeflow.netlify.app/auth}
+            	\item Live:  \href{https://personal-financeflow.netlify.app/auth}
   {\underline{Finance Flow}}
-		\item Source: \faicon{github} \href{https://github.com/sukhlotey/Finance-Flow}
+		\item Source: \href{https://github.com/sukhlotey/Finance-Flow}
   {\underline{Finance Flow}}
 	\end{itemize}
 		
 	% ------------- end project 1 ------------- %
  \noindent\href{https://github.com/sukhlotey/Uptime-monitor}{\textbf{Uptime Monitor}}  \hfill \textbf{January 2024} 
 		
-	\noindent The Mern Stack Application Uptime Monitor
+	\noindent The MERN Stack Application Uptime Monitor
 	\spaceCollapse
 	\begin{itemize}
-		\item \textbf{Technology/Packages:} Nodejs, Expressjs, ReactJs, MongoDB, Nodemon, JWT Token, Winston, Nodemailer, Moment Packages
+		\item \textbf{Technology/Packages:} ReactJs, Nodejs, Expressjs, , MongoDB, Nodemon, JWT Token, Winston, Nodemailer, Moment Packages
 
 		      \bulletSpace
         
-		\item Source: \faicon{github} \href{https://github.com/sukhlotey/Uptime-monitor}{\underline{Uptime Monitor}}
+		\item Source: \href{https://github.com/sukhlotey/Uptime-monitor}{\underline{Uptime Monitor}}
 	\end{itemize}
 		%........%
 	\noindent\href{https://github.com/sukhlotey/newsdaily}{\textbf{News Man}}  \hfill \textbf{November 2023} 
@@ -153,10 +160,10 @@ As a MERN stack developer, I specialize in building web applications using Mongo
 	\noindent The React application that shows world's live news
 	\spaceCollapse
 	\begin{itemize}
-		\item \textbf{Technology/Tools:} React, News api, Bootstrap, CSS
+		\item \textbf{Technology/Tools:} Reactjs, News api, Bootstrap, CSS
 		      \bulletSpace
         
-		\item Source: \faicon{github} \href{https://github.com/sukhlotey/newsdaily}{\underline{News Man}}
+		\item Source: \href{https://github.com/sukhlotey/newsdaily}{\underline{News Man}}
 	\end{itemize}
 %.....%
  \noindent\href{https://github.com/sukhlotey/invoice-set}{\textbf{Invoice Set}}  \hfill \textbf{November 2023} 
@@ -164,38 +171,28 @@ As a MERN stack developer, I specialize in building web applications using Mongo
 	\noindent The Invoice set Application that generate invoice
 	\spaceCollapse
 	\begin{itemize}
-		\item \textbf{Technology/Tools:} React, React-Bootstrap
+		\item \textbf{Technology/Tools:} Reactjs, React-Bootstrap
 		      \bulletSpace
-            	\item working demo: \faicon{globe} \href{https://invoiceset.netlify.app/}
+            	\item Live: \href{https://invoiceset.netlify.app/}
   {\underline{Invoice Set}}
-		\item Source: \faicon{github} \href{https://github.com/sukhlotey/invoice-set}
+		\item Source: \href{https://github.com/sukhlotey/invoice-set}
   {\underline{Invoice Set}}
 	\end{itemize}
 	
 	% ------------- project 2 ------------- %
- \newpage
 	\noindent\href{https://github.com/sukhlotey/Crypto-Ware}{\textbf{Crypto Ware}}  \hfill \textbf{August 2024} 
 		
 	\noindent The React application that shows you current live data of crypto coins with beautiful graph
 	\spaceCollapse
 	\begin{itemize}
-		\item \textbf{Technology/Tools:} ReactJS, coingecko api, ThreeJS libraries
+		\item \textbf{Technology/Tools:} ReactjS, coingecko api, ThreeJS libraries
 		      \bulletSpace
-		\item working demo: \faicon{globe} \href{https://cryptowarehouse.netlify.app/}{\underline{Crypto Ware}}
-           \item Source: \faicon{github} \href{https://github.com/sukhlotey/Crypto-Ware}{\underline{Crypto Ware}}
+		\item working demo: \href{https://cryptowarehouse.netlify.app/}{\underline{Crypto Ware}}
+           \item Source: \href{https://github.com/sukhlotey/Crypto-Ware}{\underline{Crypto Ware}}
 	\end{itemize}
 	% ------------- end project 2 ------------- %
 		% ------------- project 3 ------------- %
-	\noindent\href{https://github.com/sukhlotey/imSukhpreet}{\textbf{Portfolio}}  \hfill \textbf{December 2021} 
-		
-	\noindent My Personal Website with contacts and social media handles.
-	\spaceCollapse
-	\begin{itemize}
-		\item \textbf{Technology/Tools:} JavaScript, CSS, HTML
-		      \bulletSpace
-		\item working demo: \faicon{globe} \href{https://sukhlotey.github.io/imSukhpreet/}{\underline{Portfolio}}
-           \item Source: \faicon{github} \href{https://github.com/sukhlotey/imSukhpreet}{\underline{Portfolio}}
-	\end{itemize}
+
 	% ------------- end project 2 ------------- %
 		
 \end{addmargin}
@@ -216,16 +213,15 @@ I received specialized training in the MERN stack with TypeScript at Ryazio Pvt 
 I received comprehensive training in ReactJS at Step GNE Institute, where I developed a strong foundation in building dynamic, responsive web applications. The course covered key concepts such as component-based architecture, state management, hooks, and effective integration with APIs.
 \end{addmargin}
 \secEndSpace
-
+\n
 % ------------- skills ------------- %
 \section{\color{blue} \textbf{Skills}}
 \secStartSpace
 
 \begin{addmargin}[1em]{1em}
 	\setstretch{1.125}
-	\noindent \textbf{Technologies i work in:} Html5, CSS, SASS, JavaScript, Bootstrap, Tailwind CSS, Material UI,React Redux Toolkit, TypeScript, ReactJS, NodeJS, ExpressJs, MongoDB, UI Tools, npm, yarn \\
+	\noindent \textbf{Technologies:} Html, CSS, SASS, JavaScript, Bootstrap, Tailwind CSS, Material UI,React Redux Toolkit, TypeScript, ReactJS, NodeJS, ExpressJs, MongoDB, SocketIo, Frappe \\
 	\noindent \textbf{OS:} Linux, MS Windows\\
-	\noindent \textbf{Tools:} Visual Studio Code, Sublime,Git
 \end{addmargin}
 \secEndSpace
 % ------------- end skills ------------- %
@@ -247,7 +243,7 @@ I received comprehensive training in ReactJS at Step GNE Institute, where I deve
 		\item \textbf {Hacktoberfest 2022 \& 2023} \hfill  \textbf{2022 \& 2023}
 \newline
 \secStartSpace
-Recipient of the prestigious Hacktoberfest award for outstanding contributions to open source software development. Demonstrated expertise in collaborating with global developer communities and delivering high-impact contributions to multiple projects. Recognized for dedication, innovation, and leadership in the field of software engineering.
+Recipient of the prestigious Hacktoberfest award for outstanding contributions to open source software development. Demonstrated expertise in working with global developer communities and delivering high impact contributions to multiple projects. Recognized for dedication, innovation, and leadership in the field of software engineering.
 \secEndSpace
   
 \end{itemize}
